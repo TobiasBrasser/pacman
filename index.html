@@ -1,0 +1,44 @@
+<!DOCTYPE HTML> 
+
+<link rel="stylesheet" href="style.css">
+<html>
+    <head>
+        <title>Pac-Man</title>
+    </head>
+        <body class = "body">
+            <p style="color: white; font-family: sans-serif; font-size: 14
+            px; margin-bottom: 6px;">
+                <span>Score: </span><span id="scoreEl">0</span>
+            </p>
+            
+            <div id="start-menu" class="menu">
+                <h1>Pac-Man</h1>
+                <button id="start-button">Start Game</button>
+                <button id="start-help-button">Help</button>
+            </div>
+            <div id="gameContainer" class="hidden">
+                <div id="gamediv">
+                    <canvas></canvas>
+                </div>
+            </div>
+            <div id="game-over-menu" class="menu hidden">
+                <h1>Geschafft! Sie haben alle Punkte gesammelt!</h1>
+                <button id="restart-button">Restart</button><br>
+                <button id="end-help-button">Help</button>
+            </div>
+            <div id="help-menu" class="menu hidden">
+                <h1>Controls</h1>
+            
+                
+                <p>Drücken Sie   "W A S D"    um die Figur zu bewegen <br><br>Hinweis: Das Timing ist sehr zentral <br><br>
+                Wichtig: Wenn der Caps-lock aktiv ist, kann sich der Spieler nicht bewegen!</p>
+                
+                <br>
+                <button id="back-button">Back</button>
+            </div>
+            
+            <script type="text/javascript" src='game.js'></script>
+
+        </body>
+</html>
+
